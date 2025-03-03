@@ -31,7 +31,6 @@ momento-wire-types==0.102.2
 multidict==6.0.5
 mypy-extensions==1.0.0
 numpy==1.26.3
-openai==1.11.0
 packaging==23.2
 protobuf==4.25.2
 pydantic==2.6.0
