@@ -22,22 +22,14 @@ CHAT_UPDATE_INTERVAL_SEC = 1
 load_dotenv()
 
 # ボットトークンを使ってアプリを初期化します
-app = App(
-    signing_secret=os.environ["SLACK_SIGNING_SECRET"],
-    token=os.environ["SLACK_BOT_TOKEN"],
-    process_before_response=True,
-)
-
-
-
- 
-
-
-# @app.event("app_mention")
-def handle_mention(event, say):
-    user=event["user"]
-    say(f"Hello <@{user}>!")    
+app = App(token=os.environ.get["SLACK_BOT_TOKEN"])
     
 # ソケットモードハンドラーを使ってアプリを起動します
 if __name__ == "__main__":
     SocketModeHandler(app, os.environ["SLACK_APP_TOKEN"]).start()
+
+
+@app.event("app_mention")
+def handle_mention(event, say):
+    user=event["user"]
+    say(f"Hello <@{user}>!")    
