@@ -4,7 +4,7 @@ import re
 from dotenv import load_dotenv
 from slack_bolt import App
 from slack_bolt.adapter.socket_mode import SocketModeHandler
-from langchain.chat_models import ChatOpenAI    
+from langchain_community.chat_models import ChatOpenAI  
 
 
 load_dotenv()
