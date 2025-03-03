@@ -22,7 +22,7 @@ CHAT_UPDATE_INTERVAL_SEC = 1
 load_dotenv()
 
 # ボットトークンを使ってアプリを初期化します
-app = App(token=os.environ.get["SLACK_BOT_TOKEN"])
+app = App(token=os.environ.get("SLACK_BOT_TOKEN"))
     
 # ソケットモードハンドラーを使ってアプリを起動します
 if __name__ == "__main__":
