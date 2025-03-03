@@ -21,6 +21,7 @@ idna==3.6
 jmespath==1.0.1
 jsonpatch==1.33
 jsonpointer==2.4
+langchain==0.1.5
 langchain-community==0.0.17
 langchain-core==0.1.18
 langchain-openai==0.0.5
@@ -31,7 +32,7 @@ momento-wire-types==0.102.2
 multidict==6.0.5
 mypy-extensions==1.0.0
 numpy==1.26.3
-openai==1.11.0
+openai==1.10.0
 packaging==23.2
 protobuf==4.25.2
 pydantic==2.6.0
